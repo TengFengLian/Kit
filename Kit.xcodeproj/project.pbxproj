@@ -14,6 +14,8 @@
 		7D8D8AD72431DF36004EAFF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D8D8AD62431DF36004EAFF3 /* Assets.xcassets */; };
 		7D8D8ADA2431DF36004EAFF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D8D8AD82431DF36004EAFF3 /* LaunchScreen.storyboard */; };
 		7D8D8ADD2431DF36004EAFF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8D8ADC2431DF36004EAFF3 /* main.m */; };
+		7D8D8AE72431E385004EAFF3 /* NSTimer+WeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8D8AE62431E385004EAFF3 /* NSTimer+WeakTimer.m */; };
+		7D8D8AEA2431E5F0004EAFF3 /* TestTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8D8AE92431E5F0004EAFF3 /* TestTimerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		7D8D8AD92431DF36004EAFF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D8D8ADB2431DF36004EAFF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D8D8ADC2431DF36004EAFF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7D8D8AE52431E385004EAFF3 /* NSTimer+WeakTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+WeakTimer.h"; sourceTree = "<group>"; };
+		7D8D8AE62431E385004EAFF3 /* NSTimer+WeakTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+WeakTimer.m"; sourceTree = "<group>"; };
+		7D8D8AE82431E5F0004EAFF3 /* TestTimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestTimerViewController.h; sourceTree = "<group>"; };
+		7D8D8AE92431E5F0004EAFF3 /* TestTimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTimerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,13 +73,33 @@
 				7D8D8ACE2431DF33004EAFF3 /* SceneDelegate.m */,
 				7D8D8AD02431DF33004EAFF3 /* ViewController.h */,
 				7D8D8AD12431DF33004EAFF3 /* ViewController.m */,
+				7D8D8AE82431E5F0004EAFF3 /* TestTimerViewController.h */,
+				7D8D8AE92431E5F0004EAFF3 /* TestTimerViewController.m */,
+				7D8D8AE42431E30C004EAFF3 /* Category */,
+				7D8D8AE32431E066004EAFF3 /* Support Files */,
+			);
+			path = Kit;
+			sourceTree = "<group>";
+		};
+		7D8D8AE32431E066004EAFF3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
 				7D8D8AD32431DF33004EAFF3 /* Main.storyboard */,
 				7D8D8AD62431DF36004EAFF3 /* Assets.xcassets */,
 				7D8D8AD82431DF36004EAFF3 /* LaunchScreen.storyboard */,
 				7D8D8ADB2431DF36004EAFF3 /* Info.plist */,
 				7D8D8ADC2431DF36004EAFF3 /* main.m */,
 			);
-			path = Kit;
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		7D8D8AE42431E30C004EAFF3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				7D8D8AE52431E385004EAFF3 /* NSTimer+WeakTimer.h */,
+				7D8D8AE62431E385004EAFF3 /* NSTimer+WeakTimer.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +175,8 @@
 				7D8D8AD22431DF33004EAFF3 /* ViewController.m in Sources */,
 				7D8D8ACC2431DF33004EAFF3 /* AppDelegate.m in Sources */,
 				7D8D8ADD2431DF36004EAFF3 /* main.m in Sources */,
+				7D8D8AE72431E385004EAFF3 /* NSTimer+WeakTimer.m in Sources */,
+				7D8D8AEA2431E5F0004EAFF3 /* TestTimerViewController.m in Sources */,
 				7D8D8ACF2431DF33004EAFF3 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +319,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 54VRA44Z6Z;
-				INFOPLIST_FILE = Kit/Info.plist;
+				INFOPLIST_FILE = "Kit/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +336,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 54VRA44Z6Z;
-				INFOPLIST_FILE = Kit/Info.plist;
+				INFOPLIST_FILE = "Kit/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
